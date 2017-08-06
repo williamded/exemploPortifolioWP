@@ -1,0 +1,84 @@
+header
+    +clearfix
+    position: relative
+    min-height: 475px
+    &:after
+        content: ""
+        display: block
+        width:  100%
+        height: 45px
+        +gradient(90deg, $verde, $azul)
+        position: absolute
+        bottom: 0
+        
+    background:
+        image: url('../images/fundo-slide-pagina-inicial.jpg')
+        position: top center
+        repeat: no-repeat
+        color: $preto
+        attachment: fixed
+        
+    .logo
+        float: left
+        margin: 30px 0 0 0
+        img
+            width: 70px
+            height: 35px
+    
+    .links
+        float: right 
+        margin: 30px 0 0 0
+        nav,
+        .social
+            display: inline-block
+        nav
+
+            +breakpoint($tablet)
+                display: none
+
+            +breakpoint($celular)
+                display: none
+            ul
+
+                li
+                    display: inline-block
+                    margin: 0 20px 0 0
+                   
+                    a
+                        color: $branco
+                        text-transform: uppercase
+                        font: 
+                       
+        .social
+            li
+                display: inline-block
+                margin: 0 3px 0 0
+                
+                a
+                    display: block
+                    padding: 4px
+                    border: 1px solid $branco
+                    line-height: 12px
+                    color: $branco
+                    width: 25px
+                    height: 25px
+                    text-align: center
+                    +border-radius(120px)
+                a:hover
+                    background: $azul
+                    
+    h1
+        clear: both
+        border: 3px $branco solid
+        font-weight: $light
+        padding: 20px 
+        margin: 190px auto 30px auto
+        display: table
+        +breakpoint($celular)
+            +font-size(50px)
+    h1,
+    p
+        color: $branco
+        text-align: center
+        text-transform:  uppercase
+    p
