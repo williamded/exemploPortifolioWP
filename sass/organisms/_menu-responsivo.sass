@@ -1,0 +1,47 @@
+.menu-responsivo
+    &.ativo
+        width: 150px
+    position: fixed
+    left: 0
+    top: 0
+    width: 0 
+    height: 100%
+
+    +gradient(0deg, $verde, $azul)
+   
+    ul
+        margin-top: 50px
+        li
+            &:first-child
+                border-top: 2px solid $branco
+            a
+                padding: 15px
+                display: block
+                color: $branco
+                border-bottom: 2px solid $branco
+                
+                &:hover,
+                &:focus
+                    background-color: rgba($preto, .5)
+           
+            
+.layout
+   &.ativo
+    +transition(4s)
+    padding-left: 150px
+   
+    
+.toggle
+    margin: 0 30px
+    visibility: hidden
+    float: right
+    
+    +breakpoint($tablet)
+        margin-right:  0
+        visibility: visible
+    +breakpoint($celular)
+        margin: 0
+         visibility: visible
+    color: $branco !important
+    +font-size(30px)
+    

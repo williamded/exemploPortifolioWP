@@ -1,0 +1,96 @@
+/* ======== Cores */
+/* ======== Font */
+/* ======== Outros */
+/* ======== Background Color Opacity */
+/* ======== Columns */
+.botao {
+  border: 2px solid #000;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700; }
+
+.pequeno {
+  padding: 7px;
+  font-size: 18px;
+  font-size: 1.125rem; }
+
+.medio {
+  padding: 9px;
+  font-size: 20px;
+  font-size: 1.25rem; }
+
+.grande {
+  padding: 11px;
+  font-size: 22px;
+  font-size: 1.375rem; }
+
+header {
+  min-height: 375px !important;
+  margin: 0 0 25px 0;
+  background-image: url("../images/fundo-slide-sobre.jpg") !important;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-color: #000; }
+  header h1 {
+    margin-top: 120px !important; }
+
+.contato form {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-top: 35px; }
+  .contato form:before, .contato form:after {
+    content: " ";
+    display: table; }
+  .contato form:after {
+    clear: both; }
+  @media (min-width: 768px) {
+    .contato form {
+      float: left;
+      width: 66.66667%; } }
+  @media (min-width: 768px) {
+    .contato form {
+      margin-left: 16.66667%; } }
+  .contato form .cols {
+    margin-left: -15px;
+    margin-right: -15px; }
+    .contato form .cols:before, .contato form .cols:after {
+      content: " ";
+      display: table; }
+    .contato form .cols:after {
+      clear: both; }
+  .contato form .col {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (min-width: 768px) {
+      .contato form .col {
+        float: left;
+        width: 50%; } }
+  .contato form input,
+  .contato form select,
+  .contato form textarea {
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 12px; }
+    .contato form input:hover,
+    .contato form select:hover,
+    .contato form textarea:hover {
+      border-color: #31b1e7; }
+    .contato form input:focus,
+    .contato form select:focus,
+    .contato form textarea:focus {
+      border-color: #9ad15e; }
+  .contato form button {
+    background-color: transparent;
+    display: table;
+    margin: 15px auto; }
+  .contato form .bg-success,
+  .contato form .bg-danger {
+    padding: 7px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    border-radius: 50px; }
